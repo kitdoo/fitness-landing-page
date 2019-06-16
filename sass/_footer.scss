@@ -1,0 +1,40 @@
+.footer {
+	background-image: url(../img/bg-footer.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	position: relative;
+	&:before {display: none;}
+	@media (min-width:1170px) {
+		&:before {
+		display: block;
+		content: "";
+		position: absolute;
+		top: -375px;
+		right: 0;
+		width: 401px;
+		height: 822px;
+		background-image: url(../img/ball.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		z-index: 2;
+	}
+	}
+}
+.copyright {
+	background-color: #1d2a3c;
+	font-size: 20px;
+	color: rgba(255,255,255,0.7);
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}

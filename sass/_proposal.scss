@@ -1,0 +1,44 @@
+.proposal {
+	text-align: center;
+}
+
+
+.input{
+	margin: 0;
+	display: inline-block;
+	width: 46%;
+	height: 66px;
+	margin-right: 4%;
+	background-color: #EFF4F3;
+	font-family: 'Avenir Next Cyr Regular';
+	font-size: 16px;
+	line-height: 30;
+	color: #6E837F;
+	padding-left: 25px;
+	padding-right: 25px;
+	border:none;
+	-webkit-border-radius: 8px;
+	        border-radius: 8px;
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+.proposal__text {
+	margin-top: 20px;
+	margin-bottom: 70px;
+	font-size: 20px;
+	line-height: 1;
+	color: #212F3D;
+	
+}
+.proposal__desription {
+	margin-top: 36px;
+	margin-bottom: 36px;
+	font-size: 14px;
+	line-height: 1;
+	color: #6E837F;
+	a{
+		color: #6E837F;
+		text-decoration: underline;
+	}
+}
