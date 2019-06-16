@@ -1,0 +1,38 @@
+.about-me{
+	height: 667px;
+	background-color: #F8FBFA;
+	position: relative;
+	text-align: left;
+	@media (min-width:992px) {
+	
+	&:before {
+		content: "";
+		position: absolute;
+		top: -33px;
+		left: -70px;
+		width: 687px;
+		height: 706px;
+		background-image: url(../img/img-woman.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}}
+	p{	
+		-webkit-border-radius: 15px;
+		        border-radius: 15px;
+		padding-top: 57px;
+		padding-bottom: 57px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 65px;
+		font-size: 20px;
+		line-height: 30px;
+		color: #212F3D;
+		text-align: left;
+	}
+	.heading {
+		text-align: left;
+	}
+}

@@ -15,7 +15,56 @@ body {
   font-family: 'Bebas Neue Bold';
   text-align: center;
   text-transform: uppercase;
-  padding-top: 115px; }
+  padding-top: 65px;
+  background-color: transparent; }
+  @media (min-width: 1170px) {
+    .heading {
+      padding-top: 115px; } }
+
+.button {
+  display: inline-block;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  text-align: center;
+  background-image: -moz-linear-gradient(-29deg, rgba(72, 215, 187, 0.8), rgba(14, 181, 149, 0.8));
+  background-image: -webkit-linear-gradient(-29deg, rgba(72, 215, 187, 0.8), rgba(14, 181, 149, 0.8));
+  background-image: -ms-linear-gradient(-29deg, rgba(72, 215, 187, 0.8), rgba(14, 181, 149, 0.8));
+  box-shadow: 0px 12px 43px 0px rgba(35, 220, 184, 0.31); }
+  .button:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #0eb595; }
+  @media (min-width: 1170px) {
+    .button {
+      font-size: 18px;
+      line-height: 1;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 56px;
+      padding-right: 56px; } }
+
+.button-special {
+  display: inline-block;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid #11b797;
+  color: #11B797;
+  padding-left: 39px;
+  padding-right: 39px;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  @media (min-width: 1170px) {
+    .button-special {
+      margin-left: auto;
+      margin-right: auto; } }
 
 @font-face {
   font-family: 'Bebas Neue Bold';
@@ -136,34 +185,6 @@ body {
       margin-top: 50px;
       margin-bottom: 100px; } }
 
-.button {
-  color: #FFF;
-  text-transform: uppercase;
-  font-size: 14px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 25px;
-  padding-left: 25px;
-  -webkit-border-radius: 40px;
-  border-radius: 40px;
-  text-align: center;
-  background-image: -moz-linear-gradient(-29deg, rgba(72, 215, 187, 0.8), rgba(14, 181, 149, 0.8));
-  background-image: -webkit-linear-gradient(-29deg, rgba(72, 215, 187, 0.8), rgba(14, 181, 149, 0.8));
-  background-image: -ms-linear-gradient(-29deg, rgba(72, 215, 187, 0.8), rgba(14, 181, 149, 0.8));
-  box-shadow: 0px 12px 43px 0px rgba(35, 220, 184, 0.31); }
-  .button:hover {
-    text-decoration: none;
-    color: #FFF;
-    background-color: #0eb595; }
-  @media (min-width: 1170px) {
-    .button {
-      font-size: 18px;
-      line-height: 1;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      padding-left: 56px;
-      padding-right: 56px; } }
-
 /*
 font-family: 'Avenir Next Cyr Medium';
 font-family: 'Avenir Next Cyr Regular';
@@ -197,5 +218,39 @@ font-family: 'Bebas Neue Bold';
     font-size: 20px;
     line-height: 30px;
     color: #212F3D; }
+
+.about-me {
+  height: 667px;
+  background-color: #F8FBFA;
+  position: relative;
+  text-align: left; }
+  @media (min-width: 992px) {
+    .about-me:before {
+      content: "";
+      position: absolute;
+      top: -33px;
+      left: -70px;
+      width: 687px;
+      height: 706px;
+      background-image: url(../img/img-woman.png);
+      background-repeat: no-repeat;
+      background-position: left top;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+  .about-me p {
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    padding-top: 57px;
+    padding-bottom: 57px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 65px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #212F3D;
+    text-align: left; }
+  .about-me .heading {
+    text-align: left; }
 
 /*# sourceMappingURL=main.css.map */
