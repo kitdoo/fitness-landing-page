@@ -1,0 +1,32 @@
+.benefits{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+	margin-bottom: 150px;
+	@media (min-width:768px) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+	}
+	@media (min-width:1170px) {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+}
+
+.benefit-card {
+	text-align: center;
+	img{
+		margin-top: 90px;
+		margin-bottom: 45px;
+		width: 150px;
+		height: 150px;
+	}
+	p{
+		width: 165px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 20px;
+		line-height: 30px;
+		color: #212F3D;
+	}
+}

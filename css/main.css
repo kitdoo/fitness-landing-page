@@ -9,6 +9,14 @@ body {
   font-family: 'Avenir Next Cyr Medium';
   min-width: 320px; }
 
+.heading {
+  font-size: 48px;
+  color: #212F3D;
+  font-family: 'Bebas Neue Bold';
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 115px; }
+
 @font-face {
   font-family: 'Bebas Neue Bold';
   src: url("../fonts/BebasNeueBold.eot");
@@ -161,5 +169,33 @@ font-family: 'Avenir Next Cyr Medium';
 font-family: 'Avenir Next Cyr Regular';
 font-family: 'Bebas Neue Bold';
 */
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  margin-bottom: 150px; }
+  @media (min-width: 768px) {
+    .benefits {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr); } }
+  @media (min-width: 1170px) {
+    .benefits {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr); } }
+
+.benefit-card {
+  text-align: center; }
+  .benefit-card img {
+    margin-top: 90px;
+    margin-bottom: 45px;
+    width: 150px;
+    height: 150px; }
+  .benefit-card p {
+    width: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 30px;
+    color: #212F3D; }
 
 /*# sourceMappingURL=main.css.map */
