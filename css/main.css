@@ -15,11 +15,7 @@ body {
   font-family: 'Bebas Neue Bold';
   text-align: center;
   text-transform: uppercase;
-  padding-top: 65px;
   background-color: transparent; }
-  @media (min-width: 1170px) {
-    .heading {
-      padding-top: 115px; } }
 
 .heading--white {
   color: #FFF; }
@@ -34,7 +30,6 @@ body {
   padding-bottom: 15px;
   padding-right: 25px;
   padding-left: 25px;
-  margin-bottom: 70px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
   text-align: center;
@@ -53,8 +48,7 @@ body {
       padding-top: 30px;
       padding-bottom: 30px;
       padding-left: 56px;
-      padding-right: 56px;
-      margin-bottom: 140px; } }
+      padding-right: 56px; } }
 
 .button-special {
   display: inline-block;
@@ -84,20 +78,29 @@ body {
 
 .social-list__item {
   margin: 0;
-  padding: 0;
-  display: inline-block; }
+  padding: 0; }
   .social-list__item a img {
     color: #FFF;
     width: 35px;
     height: 35px; }
 
 .social-list__item--footer {
-  padding: 20px;
   border: 1px solid #FFF;
-  -webkit-border-radius: 80px;
-  border-radius: 80px;
   margin-bottom: 426px;
-  margin-top: 80px; }
+  margin-top: 80px;
+  padding: 5px;
+  -webkit-border-radius: 80px;
+  border-radius: 80px; }
+  @media (min-width: 768px) {
+    .social-list__item--footer {
+      padding: 10px; } }
+  @media (min-width: 1170px) {
+    .social-list__item--footer {
+      padding: 20px; } }
+
+.filter {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1); }
 
 @font-face {
   font-family: 'Bebas Neue Bold';
@@ -127,6 +130,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   padding-top: 20px;
+  padding-bottom: 245px;
   position: relative; }
   .header:before {
     display: none; }
@@ -207,16 +211,19 @@ font-family: 'Avenir Next Cyr Regular';
 font-family: 'Bebas Neue Bold';
 */
 .benefits {
+  padding-top: 115px;
+  padding-bottom: 157px; }
+
+.benefits-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  margin-bottom: 150px; }
+  grid-template-rows: repeat(8, 1fr); }
   @media (min-width: 768px) {
-    .benefits {
+    .benefits-grid {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 1fr); } }
   @media (min-width: 1170px) {
-    .benefits {
+    .benefits-grid {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr); } }
 
@@ -236,6 +243,7 @@ font-family: 'Bebas Neue Bold';
     color: #212F3D; }
 
 .about-me {
+  padding-top: 117px;
   height: 674px;
   background-color: #F8FBFA;
   position: relative; }
@@ -269,6 +277,8 @@ font-family: 'Bebas Neue Bold';
     text-align: left; }
 
 .proposal {
+  padding-top: 115px;
+  padding-bottom: 100px;
   text-align: center; }
 
 .input {
@@ -308,6 +318,7 @@ font-family: 'Bebas Neue Bold';
     text-decoration: underline; }
 
 .footer {
+  padding-top: 157px;
   background-image: url(../img/bg-footer.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -331,8 +342,7 @@ font-family: 'Bebas Neue Bold';
       background-position: center;
       -webkit-background-size: cover;
       -o-background-size: cover;
-      background-size: cover;
-      z-index: 2; } }
+      background-size: cover; } }
 
 .copyright {
   background-color: #1d2a3c;
